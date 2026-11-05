@@ -1,0 +1,49 @@
+{
+    "people": [
+        {
+            "name": "John Doe",
+            "age": 30,
+            "city": "New York"
+        },
+        {
+            "name": "Jane Doe",
+            "age": 25,
+            "city": "Los Angeles"
+        },
+        {
+            "name": "Jim Beam",
+            "age": 40,
+            "city": "Chicago"
+        },
+        {
+            "name": "Jill Smith",
+            "age": 35,
+            "city": "Miami"
+        },
+        {
+            "name": "Barry Bonds",
+            "age": 50,
+            "city": "San Francisco"
+        },
+        {
+            "name": "Ben Dover",
+            "age": 22,
+            "city": "Detroit"
+        },
+        {
+            "name": "Chuck Norris",
+            "age": 75,
+            "city": "Austin"
+        },
+        {
+            "name": "Harry Hines",
+            "age": 45,
+            "city": "Houston"
+        },
+        {
+            "name": "Ike Eakins",
+            "age": 55,
+            "city": "Seattle"
+        }
+    ]
+}
