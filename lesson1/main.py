@@ -42,7 +42,9 @@ def filter_by_age(data, age=''):
     filters in passed in data by age.  If a negative number is indicated, it looks for age <= n. 
     Positive , then looks for age >= n. if it's not a number then returns an empty array.
     """
-
+    if age == '':
+        # entered a blank value
+        return data
     try:
         ageval = int(age)
     except ValueError:
@@ -52,9 +54,7 @@ def filter_by_age(data, age=''):
     if ageval == 0:
         # entered 0
         return []
-    if age == '':
-        # entered a blank value
-        return data
+
 
     results = []
 
