@@ -1,0 +1,133 @@
+2026-11-03 08:14:22 INFO Application started
+2026-11-03 08:14:23 DEBUG Loaded configuration from config.yaml
+2026-11-03 08:15:01 INFO User login succeeded for alice
+2026-11-03 09:02:44 WARNING Disk usage is above 80 percent
+!!! truncated output from previous crash dump
+2026-11-03 09:18:17 ERROR Database connection timed out
+2026-11-03 09:18:19 INFO Retrying database connection
+2026-11-03 09:18:22 INFO Database connection restored
+2026-11-03 11:41:05 DEBUG Cache miss for key session:alice
+2026-11-03 13:07:33 INFO Scheduled backup started
+2026-11-03 13:12:08 INFO Scheduled backup completed
+some bullshit that doesn't belong
+2026-11-04 07:55:10 INFO User login succeeded for bob
+2026-11-04 08:03:29 ERROR Failed to send email notification
+2026-11-04 10:22:14 DEBUG Request GET /api/health returned 200
+2026-11-04 14:47:02 CRITICAL Unhandled exception in payment worker
+2026-11-04 14:47:05 ERROR Payment job 88421 failed after 3 retries
+2026-11-04 16:09:38 INFO User logout for bob
+2026-11-05 01:03:11 WARNING Certificate expires in 14 days
+2026-11-05 09:21:46 INFO User login succeeded for carol
+2026-11-05 09:22:01 DEBUG Request POST /api/orders returned 201
+2026-11-05 11:08:55 ERROR File not found: /var/data/export.csv
+2026-11-05 12:44:19 INFO Background job queue drained
+2026-11-05 14:32:10 ERROR Database connection timed out
+2026-11-05 14:32:41 WARNING Rate limit approaching for client 192.168.1.42
+2026-11-05 15:01:07 INFO Application shutdown requested
+2026-11-05 15:18:05 ERROR Database connection timed out
+2026-11-05 15:28:13 INFO Scheduled backup started
+2026-11-05 15:31:18 ERROR Database connection timed out
+2026-11-05 15:50:56 INFO Health check passed for node 4
+2026-11-05 16:08:33 INFO User login succeeded for erin
+2026-11-05 16:17:17 WARNING Slow query detected on payments table
+2026-11-05 16:24:30 DEBUG Cache miss for key session:frank
+2026-11-05 16:29:54 ERROR Failed to send email notification
+2026-11-05 16:44:32 WARNING User login failed for erin
+not a timestamp at all, just leftover console noise
+2026-11-05 17:02:06 INFO Background job 12081 completed
+2026-11-05 17:22:24 ERROR Failed to send email notification
+2026-11-05 17:43:36 WARNING User login failed for bob
+2026-11-05 17:54:25 INFO User logout for erin
+2026-11-05 18:05:20 INFO Background job 12285 completed
+2026-11-05 18:23:00 DEBUG Request POST /api/login returned 401
+2026-11-05 18:37:13 INFO User logout for erin
+2026-11-05 18:59:53 WARNING Certificate expires in 25 days
+2026-11-05 19:17:17 INFO Scheduled backup started
+2026-11-05 19:28:09 WARNING Slow query detected on sessions table
+2026-11-05 19:39:13 WARNING Slow query detected on orders table
+2026-11-05 19:57:38 DEBUG Cache hit for key cart:371
+2026-11-05 20:04:53 INFO Token refreshed for ivan
+2026-11-05 20:19:07 ERROR Payment job 88253 failed after 1 retries
+2026-11-05 20:24:02 DEBUG Cache hit for key cart:742
+2026-11-05 20:32:52 INFO User logout for grace
+2026-11-05 20:48:16 WARNING Rate limit approaching for client 192.168.0.88
+2026-11-05 20:59:51 DEBUG Cache miss for key session:alice
+2026-11-05 21:20:39 WARNING Slow query detected on users table
+2026-11-05 21:33:06 WARNING Rate limit approaching for client 192.168.1.42
+2026-11-05 21:44:38 ERROR Payment job 88468 failed after 1 retries
+2026-11-05 21:57:31 WARNING Disk usage is above 84 percent
+2026-11-05 22:12:19 INFO Application shutdown requested
+2026-11-05 22:30:20 ERROR Failed to send email notification
+2026-11-05 22:42:35 ERROR Database connection timed out
+2026-11-05 23:03:40 CRITICAL Unhandled exception in payment worker
+2026-11-05 23:24:29 DEBUG Cache hit for key cart:775
+2026-11-05 23:43:04 INFO Retrying database connection
+2026-11-06T00:02:59 ERROR File not found: /tmp/upload.bin
+2026-11-06 00:23:47 INFO Database connection restored
+2026-11-06 00:39:29 WARNING Rate limit approaching for client 192.168.0.88
+2026-11-06 00:56:36 ERROR Database connection timed out
+2026-11-06 01:01:57 INFO Scheduled backup started
+2026-11-06 01:07:42 ERROR Database connection timed out
+2026-11-06 01:13:39 WARNING Slow query detected on users table
+2026-11-06 01:32:54 CRITICAL Unhandled exception in email worker
+2026-11-06 01:53:02 CRITICAL Unhandled exception in email worker
+2026-11-06 02:11:53 WARNING Disk usage is above 83 percent
+2026-11-06 02:18:35 ERROR Failed to send email notification
+2026-11-06 02:35:01 WARNING User login failed for heidi
+2026-11-06 02:41:04 WARNING Slow query detected on users table
+2026-11-06 02:51:16 INFO Token refreshed for dave
+2026-11-06 02:59:33 ERROR Database connection timed out
+[ERROR] Connection refused while connecting to redis:6379
+2026-11-06 03:05:01 DEBUG Cache miss for key session:ivan
+2026-11-06 03:09:42 INFO User login succeeded for ivan
+2026-11-06 03:15:41 DEBUG Request PUT /api/profile returned 200
+2026-11-06 03:34:11 INFO Background job 12061 completed
+2026-11-06 03:42:35 INFO Background job 12272 completed
+2026-11-06 03:59:53 WARNING Certificate expires in 23 days
+2026-11-06 04:09:11 WARNING User login failed for dave
+2026-11-06 04:30:58 WARNING User login failed for ivan
+2026-11-06 04:44:01 CRITICAL Unhandled exception in ingest worker
+2026-11-06 05:03:11 ERROR Payment job 88042 failed after 1 retries
+2026-11-06 05:08:49 ERROR Database connection timed out
+2026-11-06 05:23:56 ERROR Database connection timed out
+2026-11-06 05:45:34 INFO User logout for alice
+2026-11-06 06:02:16 ERROR Payment job 88162 failed after 2 retries
+2026-11-06 06:11:58 ERROR Database connection timed out
+2026-11-06 06:23:23 INFO Database connection restored
+2026-11-06 06:40:43 INFO User login succeeded for bob
+2026-11-06 06:58:22 DEBUG Cache miss for key session:judy
+{"level":"ERROR","message":"worker heartbeat missed"}
+2026-11-06 07:03:56 ERROR Payment job 88136 failed after 1 retries
+2026-11-06 07:18:52 ERROR Database connection timed out
+2026-11-06 07:33:10 WARNING Rate limit approaching for client 192.168.0.88
+2026-11-06 07:45:49 INFO User login succeeded for ivan
+2026-11-06 08:06:08 DEBUG Cache hit for key cart:370
+2026-11-06 08:13:04 DEBUG Loaded configuration from config.yaml
+2026-11-06 08:35:17 WARNING Disk usage is above 88 percent
+2026-11-06 08:54:48 WARNING User login failed for erin
+2026-11-06 09:00:28 INFO Retrying database connection
+2026-11-06 09:04:28 DEBUG Cache hit for key cart:752
+2026-11-06 09:15:38 INFO Scheduled backup started
+2026-11-06 09:21:42 WARNING Certificate expires in 3 days
+2026-11-06 09:37:50 INFO Database connection restored
+2026-11-06 09:52:47 ERROR Failed to send email notification
+Nov  6 10:02:30 app[2210]: Cache miss for key session:dave
+2026-11-06 10:17:19 ERROR File not found: /home/app/reports/daily.pdf
+2026-11-06 10:25:18 DEBUG Request GET /api/orders returned 200
+2026-11-06 10:41:19 WARNING Slow query detected on sessions table
+2026-11-06 10:51:36 DEBUG Cache miss for key session:carol
+2026-11-06 11:07:31 CRITICAL Unhandled exception in email worker
+2026-11-06 11:17:23 ERROR Failed to send email notification
+2026-11-06 11:30:15 ERROR Database connection timed out
+2026-11-06 11:33:57 INFO Background job 12337 completed
+2026-11-06 11:45:52 INFO Retrying database connection
+2026-11-06 12:00:33 INFO Background job 12696 completed
+2026-11-06 12:20:54 DEBUG Cache miss for key session:alice
+2026-11-06 12:32:05 INFO Retrying database connection
+2026-11-06 12:36:11 ERROR File not found: /etc/app/secrets.env
+2026-11-06 12:49:38 ERROR Payment job 88060 failed after 2 retries
+2026-11-06 13:10:50 WARNING User login failed for erin
+2026-11-06 13:10:50 error lowercase level should not parse
+2026/11/06 13:22:00 INFO wrong date separators
+2026-11-06 13:28:14 INFO Health check passed for node 2
+2026-11-06 15:11:33 INFO Scheduled backup completed

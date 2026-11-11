@@ -1,0 +1,30 @@
+
+    
+    ==============================================================================
+    ==============================================================================
+    =============================  LOGS REPORT  ==================================
+    ==============================================================================
+    ==============================================================================
+
+    
+    First Timestamp: 2026-11-03 08:14:22
+    Last Timestamp: 2026-11-06 15:11:33
+
+    Skipped/Malformed Lines Total: 9
+
+    Log Level Counts: 
+         INFO : 42
+         DEBUG : 19
+         WARNING : 27
+         ERROR : 30
+         CRITICAL : 6
+
+    Top 5 Message: 
+       Database connection timed out : 13
+       Failed to send email notification : 7
+       Retrying database connection : 5
+       Scheduled backup started : 5
+       Database connection restored : 4
+
+
+    

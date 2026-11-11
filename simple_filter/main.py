@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-DATA_FILENAME = "people.json"
+DATA_FILENAME = "./simple_filter/people.json"
 DATA_KEYNAME = "people"
 
 # Load the data from the JSON file
