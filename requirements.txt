@@ -1,3 +1,4 @@
 pytest
 pytest-cov
 poethepoet
+fastapi[standard]

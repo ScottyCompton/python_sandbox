@@ -6,11 +6,19 @@ build-backend = "setuptools.build_meta"
 name = "sandbox"
 version = "0.1.0"
 description = "My Python sandbox project"
+requires-python = ">=3.12"
 dependencies = [
     "pytest",
     "pytest-cov",
-    "poethepoet"
+    "poethepoet",
+    "fastapi[standard]"
 ]
+
+[tool.uv]
+package = false
+
+[tool.setuptools]
+packages = []
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
@@ -23,3 +31,4 @@ test-simple-filter-cov = "pytest --cov=simple_filter --cov-report=term-missing s
 run-log-parser = "python log_parser/main.py -l sample.log"
 test-log-parser = "pytest log_parser"
 test-log-parser-cov = "pytest --cov=log_parser --cov-report=term-missing log_parser"
+run-hello-world-api = "fastapi dev hello_world_api/main.py"

@@ -1,0 +1,394 @@
+{
+  "customers": [
+    {
+      "name": "Leo Decaprio",
+      "address": "123 Smith St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90210",
+      "email": "kingoftheworld@yahoo.com",
+      "phone": "805-123-4567",
+      "hobbies": [
+        "Ice Skating",
+        "Pole dancing",
+        "Underwater basket weaving"
+      ],
+      "id": "dcb833f3-5ac9-4404-aaf5-1412f9da065b"
+    },
+    {
+      "name": "Maya Chen",
+      "address": "482 Oak Avenue",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98101",
+      "email": "maya.chen@outlook.com",
+      "phone": "206-555-0142",
+      "hobbies": [
+        "photography",
+        "hiking",
+        "cooking"
+      ],
+      "id": "07eb08b9-421d-4af1-a026-5da336f585d5"
+    },
+    {
+      "name": "Andre Williams",
+      "address": "19 Pine Court",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30303",
+      "email": "andre.williams@gmail.com",
+      "phone": "404-555-0198",
+      "hobbies": [
+        "basketball",
+        "grilling",
+        "jazz"
+      ],
+      "id": "206f93cc-6a74-4ac7-b97b-b9a9f34e0668"
+    },
+    {
+      "name": "Sofia Alvarez",
+      "address": "770 Market Street",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78701",
+      "email": "sofia.alvarez@icloud.com",
+      "phone": "512-555-0114",
+      "hobbies": [
+        "yoga",
+        "painting",
+        "travel"
+      ],
+      "id": "52be29f4-68b2-4565-9579-85c25d554c19"
+    },
+    {
+      "name": "Jonah Patel",
+      "address": "2601 Lakeshore Drive",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60611",
+      "email": "jonah.patel@gmail.com",
+      "phone": "312-555-0176",
+      "hobbies": [
+        "chess",
+        "running",
+        "podcasts"
+      ],
+      "id": "ccd05e4e-8d4f-4a9a-8669-13496a7377ff"
+    },
+    {
+      "name": "Priya Nair",
+      "address": "88 Harbor Way",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02110",
+      "email": "priya.nair@protonmail.com",
+      "phone": "617-555-0133",
+      "hobbies": [
+        "reading",
+        "sailing",
+        "gardening"
+      ],
+      "id": "6d36d114-d3dd-4f51-bd5a-ae1ced26cb35"
+    },
+    {
+      "name": "Marcus Reed",
+      "address": "415 Elm Street",
+      "city": "Denver",
+      "state": "CO",
+      "zip": "80203",
+      "email": "marcus.reed@yahoo.com",
+      "phone": "303-555-0188",
+      "hobbies": [
+        "skiing",
+        "brewing",
+        "camping"
+      ],
+      "id": "6a164860-fed8-4212-a9df-ba750fdebea3"
+    },
+    {
+      "name": "Elena Rossi",
+      "address": "902 Valencia Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94110",
+      "email": "elena.rossi@gmail.com",
+      "phone": "415-555-0160",
+      "hobbies": [
+        "cycling",
+        "wine tasting",
+        "film"
+      ],
+      "id": "7bbf7b19-fe9e-46e9-b515-a96f4bcb767b"
+    },
+    {
+      "name": "Darius Cole",
+      "address": "3310 Peachtree Road",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33131",
+      "email": "darius.cole@hotmail.com",
+      "phone": "305-555-0127",
+      "hobbies": [
+        "surfing",
+        "djing",
+        "soccer"
+      ],
+      "id": "79d30f32-14d1-41a5-9654-94062f600d6a"
+    },
+    {
+      "name": "Hannah Dawn Brooks",
+      "address": "67 Maple Lane",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97205",
+      "email": "hannah.brooks@gmail.com",
+      "phone": "503-555-0149",
+      "hobbies": [
+        "knitting",
+        "bird watching",
+        "baking"
+      ],
+      "id": "57ec5b1c-aa5f-48ff-b3d7-ce9958f9edf6"
+    },
+    {
+      "name": "Kenji Tanaka",
+      "address": "1500 Second Avenue",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10021",
+      "email": "kenji.tanaka@outlook.com",
+      "phone": "212-555-0105",
+      "hobbies": [
+        "piano",
+        "ramen hunting",
+        "running"
+      ],
+      "id": "9c8b788e-49c3-49f5-a89c-2e8085932648"
+    },
+    {
+      "name": "Aisha Rahman",
+      "address": "44 Crescent Boulevard",
+      "city": "Houston",
+      "state": "TX",
+      "zip": "77002",
+      "email": "aisha.rahman@gmail.com",
+      "phone": "713-555-0191",
+      "hobbies": [
+        "calligraphy",
+        "swimming",
+        "astronomy"
+      ],
+      "id": "5a933b42-6e4c-4c33-94ea-da354587a155"
+    },
+    {
+      "name": "Owen Gallagher",
+      "address": "812 Birch Road",
+      "city": "Minneapolis",
+      "state": "MN",
+      "zip": "55401",
+      "email": "owen.gallagher@icloud.com",
+      "phone": "612-555-0156",
+      "hobbies": [
+        "ice hockey",
+        "woodworking",
+        "fishing"
+      ],
+      "id": "44992853-899c-4e34-b54f-21a129545430"
+    },
+    {
+      "name": "Camila Torres",
+      "address": "2300 Desert View",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip": "85004",
+      "email": "camila.torres@yahoo.com",
+      "phone": "602-555-0182",
+      "hobbies": [
+        "hiking",
+        "pottery",
+        "salsa dancing"
+      ],
+      "id": "25122610-8735-4fb2-80a6-588dd33586a0"
+    },
+    {
+      "name": "Noah Kim",
+      "address": "91 King Street",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37203",
+      "email": "noah.kim@gmail.com",
+      "phone": "615-555-0119",
+      "hobbies": [
+        "guitar",
+        "songwriting",
+        "coffee"
+      ],
+      "id": "edf31c9f-934f-4343-af8d-8de95ab7cd26"
+    },
+    {
+      "name": "Grace Okonkwo",
+      "address": "1200 Capitol Mall",
+      "city": "Sacramento",
+      "state": "CA",
+      "zip": "95814",
+      "email": "grace.okonkwo@outlook.com",
+      "phone": "916-555-0138",
+      "hobbies": [
+        "volunteering",
+        "running",
+        "board games"
+      ],
+      "id": "e7be3716-c1c1-4fec-8169-51fc7baf5566"
+    },
+    {
+      "name": "Liam O'Connor",
+      "address": "55 Beacon Hill",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip": "19103",
+      "email": "liam.oconnor@gmail.com",
+      "phone": "215-555-0164",
+      "hobbies": [
+        "history",
+        "cycling",
+        "brewing"
+      ],
+      "id": "b0ec1edd-f9e5-4ff5-ac71-2ecae096bd8d"
+    },
+    {
+      "name": "Amelia Park",
+      "address": "310 Cherry Blossom Way",
+      "city": "Washington",
+      "state": "DC",
+      "zip": "20001",
+      "email": "amelia.park@protonmail.com",
+      "phone": "202-555-0122",
+      "hobbies": [
+        "museums",
+        "pilates",
+        "writing"
+      ],
+      "id": "f2ee0411-e03c-4cc2-9327-f134ac9901bd"
+    },
+    {
+      "name": "Diego Morales",
+      "address": "1780 Alameda Avenue",
+      "city": "San Diego",
+      "state": "CA",
+      "zip": "92101",
+      "email": "diego.morales@gmail.com",
+      "phone": "619-555-0173",
+      "hobbies": [
+        "surfing",
+        "photography",
+        "tacos"
+      ],
+      "id": "16549871-2646-440e-af9f-64e4da350185"
+    },
+    {
+      "name": "Riley Thompson",
+      "address": "6 Cedar Ridge",
+      "city": "Boulder",
+      "state": "CO",
+      "zip": "80302",
+      "email": "riley.thompson@icloud.com",
+      "phone": "720-555-0144",
+      "hobbies": [
+        "climbing",
+        "trail running",
+        "meditation"
+      ],
+      "id": "723d780d-590e-490f-adb5-e6b1b6b8634a"
+    },
+    {
+      "name": "Fatima Hassan",
+      "address": "400 Canal Street",
+      "city": "New Orleans",
+      "state": "LA",
+      "zip": "70112",
+      "email": "fatima.hassan@yahoo.com",
+      "phone": "504-555-0195",
+      "hobbies": [
+        "cooking",
+        "jazz",
+        "gardening"
+      ],
+      "id": "cc1f8bb8-c425-4c0f-bfdd-86fe4a8bb3d6"
+    },
+    {
+      "name": "Benjamin Shaw",
+      "address": "22 Harbor Island",
+      "city": "Charleston",
+      "state": "SC",
+      "zip": "29401",
+      "email": "ben.shaw@gmail.com",
+      "phone": "843-555-0108",
+      "hobbies": [
+        "sailing",
+        "barbecue",
+        "reading"
+      ],
+      "id": "b9f84bed-f1e3-4e4c-8f89-d3f7e3eab00f"
+    },
+    {
+      "name": "Nina Volkov",
+      "address": "880 Lakeview Terrace",
+      "city": "Madison",
+      "state": "WI",
+      "zip": "53703",
+      "email": "nina.volkov@outlook.com",
+      "phone": "608-555-0151",
+      "hobbies": [
+        "ice skating",
+        "baking",
+        "puzzles"
+      ],
+      "id": "f1fd3da5-7b94-4e9c-a745-07a2da8a0b0d"
+    },
+    {
+      "name": "Chloe David Bennett",
+      "address": "9 Magnolia Court",
+      "city": "Raleigh",
+      "state": "NC",
+      "zip": "27601",
+      "email": "chloe.bennett@icloud.com",
+      "phone": "919-555-0130",
+      "hobbies": [
+        "running",
+        "pottery",
+        "travel"
+      ],
+      "id": "8b1e21f4-5042-4df3-83d7-d036e7855362"
+    },
+    {
+      "name": "David X. Grabopple III, esq.",
+      "address": "5252 Golf Gold Lane",
+      "city": "Dallas",
+      "state": "TX",
+      "zip": "75242",
+      "email": "dave@grabopple.com",
+      "phone": "806-555-1212",
+      "hobbies": [
+        "fishing",
+        "golfing",
+        "murder"
+      ],
+      "id": "a29df1cb-e5c1-45e1-83a0-8fef01d4c251"
+    },
+    {
+      "name": "Jack MeOff",
+      "address": "123 Smith Point Lane",
+      "city": "Dallas",
+      "state": "TX",
+      "zip": "75242",
+      "email": "jackmeoff@gmail.com",
+      "phone": "214-555-7851",
+      "hobbies": [
+        "Surfing",
+        "Skiing",
+        "Necrophilia"
+      ],
+      "id": "c17ed73f-6209-45cc-ac4f-b1fa3235c898"
+    }
+  ]
+}
