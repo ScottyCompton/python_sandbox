@@ -22,12 +22,37 @@ You can combine filters. Name and city matches are case-insensitive. Age uses a 
 
 At least one of age, name, or city must be provided. After each search you can run another query or exit.
 
+### Lesson 2 — Log Parser
+
+A command-line program that reads a log file, skips malformed lines, and prints a summary of the valid entries.
+
+- **Location:** `log_parser/`
+- **Sample data:** `log_parser/sample.log`
+- **Entry point:** `log_parser/main.py`
+
+Each valid line must look like:
+
+```text
+YYYY-MM-DD HH:MM:SS LEVEL message
+```
+
+Allowed levels are `INFO`, `DEBUG`, `WARNING`, `ERROR`, and `CRITICAL`. Anything that does not match is counted as skipped.
+
+The summary includes:
+
+- First and last timestamps
+- Counts of valid and skipped lines
+- Counts per log level
+- The five most common messages
+
+You can print the report to the terminal and optionally write it to a `.txt` or `.json` file.
+
 ## Requirements
 
 - [Python 3.12+](https://www.python.org/downloads/) (3.13 is what this repo was developed with)
 - A terminal (Command Prompt, PowerShell, or Git Bash on Windows)
 
-The Simple Filter app uses only the Python standard library. Tests use [pytest](https://pytest.org/).
+Both apps use only the Python standard library. Tests use [pytest](https://pytest.org/) and [pytest-cov](https://pytest-cov.readthedocs.io/). Optional task shortcuts use [Poe the Poet](https://poethepoet.github.io/poethepoet/).
 
 ## Getting started
 
@@ -59,15 +84,15 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Right now that only installs [pytest](https://pytest.org/) for running tests. Add new packages to `requirements.txt` as later lessons need them.
+That installs pytest, pytest-cov, and poethepoet. Add new packages to `requirements.txt` as later lessons need them.
 
 ## Running Simple Filter
 
-Run the program from the `simple_filter` directory so it can find `people.json`:
+Run the program from the project root so it can find `simple_filter/people.json`:
 
 ```bash
-cd simple_filter
-python main.py
+python simple_filter/main.py
+# or: poe run-simple-filter
 ```
 
 You will be prompted for age, name, and city. Leave a field blank to skip that filter. After results are shown, press **Enter** to search again or type **X** to exit.
@@ -82,36 +107,67 @@ City: Chicago
 
 That search returns people who are at least 40 and live in Chicago.
 
-## Running tests
+## Running Log Parser
 
-From the `simple_filter` directory, with the virtual environment activated and pytest installed:
+Run the program from the project root. `--log` / `-l` is required. `--out` / `-o` is optional and must end in `.txt` or `.json`.
 
 ```bash
-cd simple_filter
-pytest test_main.py
+python log_parser/main.py -l log_parser/sample.log
+python log_parser/main.py -l log_parser/sample.log -o report.txt
+python log_parser/main.py -l log_parser/sample.log -o report.json
 ```
+
+From inside `log_parser/`, the sample file is just `sample.log`:
+
+```bash
+cd log_parser
+python main.py -l sample.log
+python main.py -l sample.log -o report.txt
+```
+
+Errors (missing file, permission denied, no valid lines, or an unsupported output suffix) are printed to stderr.
+
+## Running tests
+
+From the project root, with the virtual environment activated:
+
+```bash
+pytest
+poe test-simple-filter
+poe test-simple-filter-cov
+poe test-log-parser
+poe test-log-parser-cov
+```
+
+`pytest` runs every test. The `poe test-*` tasks run one project at a time. The `*-cov` tasks also print a coverage report with missing lines.
 
 ## Project structure
 
 ```text
 python_sandbox/
 ├── README.md
+├── pyproject.toml       # pytest config and poe task shortcuts
 ├── requirements.txt
 ├── .gitignore
-└── simple_filter/
-    ├── main.py          # Filter app
-    ├── people.json      # Sample people data
-    └── test_main.py     # pytest coverage of the filter functions
+├── simple_filter/
+│   ├── main.py          # Filter app
+│   ├── people.json      # Sample people data
+│   └── test_main.py     # pytest coverage of the filter functions
+└── log_parser/
+    ├── main.py          # Log parser app
+    ├── sample.log       # Sample log file (valid lines mixed with garbage)
+    └── test_main.py     # pytest coverage of the parser and report functions
 ```
 
 ## Adding a new project
 
 When you add another lesson:
 
-1. Put it in its own folder (`simple_filter/`, `another_project/`, and so on).
+1. Put it in its own folder (`simple_filter/`, `log_parser/`, `another_project/`, and so on).
 2. Add a new heading under **Projects** with a short description, location, and how to run it.
 3. Update **Project structure**.
 4. Add any new packages to `requirements.txt` and mention them under **Requirements** if they are not already listed.
+5. Add matching `poe` tasks in `pyproject.toml` if you want shortcuts from the project root.
 
 ## License
 

@@ -8,10 +8,18 @@ version = "0.1.0"
 description = "My Python sandbox project"
 dependencies = [
     "pytest",
-    "pytest-cov"
+    "pytest-cov",
+    "poethepoet"
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "--import-mode=importlib"
 
 [tool.poe.tasks]
 run-simple-filter = "python simple_filter/main.py"
-test-simple-filter = "pytest simple_filter"
-test-simple-filter-cov = "pytest --cov=simple_filter/ --cov-report=term-missing simple_filter/"
+test-simple-filter = "pytest --cov=simple_filter simple_filter"
+test-simple-filter-cov = "pytest --cov=simple_filter --cov-report=term-missing simple_filter"
+run-log-parser = "python log_parser/main.py -l sample.log"
+test-log-parser = "pytest log_parser"
+test-log-parser-cov = "pytest --cov=log_parser --cov-report=term-missing log_parser"

@@ -1,6 +1,6 @@
 import json
 import pytest
-import main
+from simple_filter import main
 
 TEST_DATA = {
     "people": [
