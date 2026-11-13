@@ -59,14 +59,14 @@ def save_data() -> None:
     os.replace(temp_filepath, DATA_FILEPATH)
 
 @app.get("/")
-async def root():
+def root():
     """
     Just shows I'm alive :->
     """
     return {"message": "Hello World!"}
 
 @app.get("/customers/")
-async def read_customers(
+def read_customers(
     name: Annotated[str | None, Query()] = None,
     email: Annotated[str | None, Query()] = None,
 ) -> list[Customer]:
@@ -87,7 +87,7 @@ async def read_customers(
 
 
 @app.get("/customers/{uuid}")
-async def read_customer(uuid: str) -> Customer:
+def read_customer(uuid: str) -> Customer:
     """
     Get a single customer record
     """
@@ -97,7 +97,7 @@ async def read_customer(uuid: str) -> Customer:
     return cust
 
 @app.delete("/customers/{uuid}")
-async def delete_customer(uuid: str) -> dict:
+def delete_customer(uuid: str) -> dict:
     """
     Delete a customer with the given uuid.  Returns deleted customer data or None if it was not found
     """
@@ -111,7 +111,7 @@ async def delete_customer(uuid: str) -> dict:
     return {"message": "Customer deleted", "customer": deleted_customer}
 
 @app.put("/customers/{uuid}")
-async def update_customer(uuid: str, payload: CustomerUpdatePayload) -> Customer:
+def update_customer(uuid: str, payload: CustomerUpdatePayload) -> Customer:
     """
     Update a customer with the given uuid.  Returns updated customer data or None if it was not found
     """
@@ -137,7 +137,7 @@ async def update_customer(uuid: str, payload: CustomerUpdatePayload) -> Customer
     return updated_customer
 
 @app.post("/customers/", status_code=201)
-async def create_customer(payload: CustomerCreatePayload) -> Customer:
+def create_customer(payload: CustomerCreatePayload) -> Customer:
     """
     Create a new customer customer with the given data. 
     """
